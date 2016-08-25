@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile "ru.skuptsov.telegram.bot:telegram-spring-reactive-bot-platform:0.1"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
