@@ -1,13 +1,12 @@
 apply plugin: 'java'
 
 repositories {
-    mavenLocal()
     mavenCentral()
     maven { url "https://jitpack.io" }
 }
 
 dependencies {
-    compile "ru.skuptsov.telegram.bot:telegram-spring-reactive-bot-platform:0.1"
+    compile 'com.github.kuptservol:spring-telegram-bot-starter:v1.0-alpha'
 }
 
 sourceCompatibility = 1.8
