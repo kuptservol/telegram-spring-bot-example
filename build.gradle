@@ -6,7 +6,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.kuptservol:spring-telegram-bot-starter:v1.0-alpha'
+    compile 'com.github.kuptservol:spring-telegram-bot-starter:v1.0'
 }
 
 sourceCompatibility = 1.8

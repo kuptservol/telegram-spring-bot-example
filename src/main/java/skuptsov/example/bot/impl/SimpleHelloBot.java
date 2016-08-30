@@ -18,7 +18,7 @@ import static ru.skuptsov.telegram.bot.platform.client.command.MessageResponse.s
 public class SimpleHelloBot {
 
     @MessageMapping(text = "Hi")
-    public MessageResponse sayHi(UpdateEvent updateEvent) {
+    public MessageResponse sayHi(UpdateEvent updateEvent){
         return sendMessage("Hi there!", updateEvent)
                 .setCallback((Consumer<Message>) message -> System.out.println("Message sent"));
     }
